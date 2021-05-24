@@ -1,0 +1,417 @@
+html
+{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background-color: midnightblue;
+}    
+::-webkit-scrollbar-thumb{
+    background-color: gold;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgb(255, 225, 195);
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    background: url('applo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.logo
+{
+    position: fixed;
+    float: left;
+    margin: 10px 20px;
+}
+.logo a
+{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+}
+nav{
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+    width: 100%;
+    height: 20%;
+    top: 0;
+    left: 0;
+}
+.menu
+{
+    margin-top: -20px;
+}
+.menu ul
+{
+    list-style: none;
+    text-align: center;
+    transition: 1s;
+    margin-left: 30%;
+}
+.menu ul li
+{
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 252, 246);
+}
+.menu ul li a:hover,.logo:hover
+{
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu ul li a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .5s;
+}
+.menu ul li a:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+.sticky
+{
+    background: linear-gradient(145deg, #c50c3a, #00a2b8);    ;
+    border-radius: 10px;
+}
+.quato
+{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family:'Raleway', sans-serif;
+    margin-top: 10%;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+.quato h2
+{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 17%;
+    margin-left: 700px;
+    font-size: 20px;
+    letter-spacing: 20px;
+    animation: movetb 3s;
+}
+@keyframes movetb{
+    0%{
+        margin-left: -100px;
+        font-size: 40px;
+        letter-spacing: 50px;
+    }
+    100%{
+        margin-left: 700px;
+        font-size: 20px;
+        letter-spacing: 20px;
+    }
+}
+.sticky2
+{
+    display: none;
+}
+.btn
+{
+    position:absolute;
+    margin-top: 41%;
+    margin-left: 47%;
+    animation: tb 1.5s;
+    display: flex;
+}
+.btn button
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: navajowhite;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+.btn img
+{
+    width: 50px;
+}
+.btn p
+{
+    padding-left: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+    animation: rl 1.7s;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.who
+{
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 7px #98dd19,
+                -3px -3px 7px rgb(29, 5, 116);
+    padding: 20px;
+    margin-left: 0.5%;
+    background: linear-gradient(45deg, #002c85, #22da59);
+}
+#who-i
+{
+    padding: 10px;
+    float: right;
+    margin-right: 1%;
+    height: 300px;
+    width: auto;
+    margin-bottom: 3%;
+    border-radius: 50% 80% 12% 39%/71% 32% 98% 99%;
+    box-shadow: 10px 10px 10px 10px rgba(255, 0, 0, 0.2);
+    cursor:pointer;
+    transition: 2s;
+}
+#head
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-left: 5%;
+    padding: 20px;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+.who p{
+    font-size: 30px;
+    margin-left: 100px;
+    color: rgb(255, 252, 214);
+    word-spacing: 10px;
+    text-transform: capitalize;
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    transition: 1.5s;
+}
+#nav2,#nav3,#nav4,#nav5
+{
+    margin-top: 30px;
+}
+#nav4 #who-i
+{
+    width: 400px;
+}
+#nav5 #who-i
+{
+    width: 400px;
+    height: 70%;
+}
+.active
+{
+    font-weight: bolder;
+}
+.over
+{
+    margin-top: 30px;
+    background: url('aple-park.jpg');
+    background-size: cover;
+    color: white;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.over img
+{
+    height: 200px;
+    width: auto;
+    margin-left: 45%;
+    margin-top: 13%;
+}
+.over p
+{
+    font-size: 100px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    left: 0px;
+    word-spacing: 20px;
+    animation: lr 2s;
+    transition: 2s;
+}
+.invent
+{
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(145deg, #5c75a8, #37ff69);
+    border-radius: 20px;
+}
+.invent p
+{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+.invent ul
+{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+.invent ul li
+{
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 50px;
+    background: linear-gradient(145deg, #08ec00, #ff3737);
+    height: 400px;
+    background-size: cover;
+    transition: 2s;
+}
+.invent ul li img
+{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    transition: 0.4s all;
+}
+.invent ul li p
+{
+    font-family: 'Raleway', serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.invent ul li:hover
+{
+    cursor: pointer;
+    background: linear-gradient(45deg, #180083, #ffa237);
+}
+.invent ul li .theory{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-320px);
+    transition: 1.5s all;
+}
+.invent ul li:hover .theory
+{
+    opacity: 1;
+    transform: translateY(-400px);
+}
+.invent ul li .theory p
+{
+    position:absolute;
+    font-size: 30px;
+    font-family: 'Satisfy', serif;
+    color: rgb(224, 199, 224);
+    padding: 20px;
+    letter-spacing: 2px;
+}
+.invent ul li:hover #i
+{
+    filter:opacity(0.5);
+}
+@keyframes tb
+{
+    0%{
+        top: -180px;
+    }
+    100%
+    {
+        top: 0;
+    }
+}
+@keyframes rl
+{
+    0%,90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes lr
+{
+    0%{
+      left: -400px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.foot
+{
+    height: 180px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background: #a5b89a;
+    box-shadow: inset 35px 35px 70px #4866be,
+            inset -35px -35px 70px #effeff;
+}
+.foot ul
+{
+    margin-top: 3%;
+    list-style: none;
+    text-align: center;   
+}
+.foot ul li
+{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #d5e3ff, #b3bfe6);
+    box-shadow:  7px 7px 14px #9faacc,
+             -7px -7px 14px #effeff;
+    cursor: pointer;
+}
+.foot ul li:hover
+{
+    background: linear-gradient(145deg, #92b6ff, #ff9854);
+    transform: scale(1.15);
+}
+.foot p
+{
+    float: right;
+    font-size: 30px;
+    font-family: "Raleway";
+    font-weight: bold;
+    color: rgb(15, 0, 97);
+    margin-top: 10px;
+}
