@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="bio.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
@@ -15,6 +16,10 @@
             <header id="main">
                 <nav>
                     <div class="logo"><a href="#main">Steve Jobs</a></div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
                     <div class="menu">
                         <ul>
                             <li><a href="#nav1">ABOUT</a></li>
@@ -119,7 +124,7 @@
                     <a href="https://www.linkedin.com" target="_blank"><li><img src="linkedin.png"></li></a>
                     <a href="https://github.com/kranthiraju" target="_blank"><li><img src="github.png"></li></a>
                 </ul>
-                <p>Desinged BY KRANTHI RAJU</p>
+                <p>Designed BY KRANTHI RAJU</p>
             </div>
         </div>
 
@@ -147,7 +152,7 @@
 
             })
             window.addEventListener("scroll",function(){
-                var scr=document.querySelector(".menu");
+                var scr=document.querySelector("nav");
                 var scr2=document.querySelector(".quato");
                 var scr3=document.querySelector('.over');
                 scr.classList.toggle("sticky",window.scrollY >180);
