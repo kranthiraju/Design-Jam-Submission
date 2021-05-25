@@ -149,6 +149,7 @@
                 const Activelink = Nav.querySelector('.active');
                 // console.log(Activelink);
                 SetTargetActive(TargetLink,Activelink);
+                document.getElementById("check").checked=false;
 
             })
             window.addEventListener("scroll",function(){
@@ -164,7 +165,7 @@
                 document.getElementById('lbtn').style.backgroundColor="#000";
             }
 
-            
+
             AOS.init();
         </script>
     </body>

@@ -159,7 +159,7 @@ nav{
 .btn
 {
     position:absolute;
-    margin-top: 41%;
+    margin-top: 85vh;
     margin-left: 47%;
     animation: tb 1.5s;
     display: flex;
@@ -445,6 +445,7 @@ nav{
     .checkbtn
     {
         display: block;
+        padding-bottom: 20px;
     }
     nav
     {
@@ -470,6 +471,10 @@ nav{
     #check:checked ~ .menu ul
     {
         display: block;
+    }
+    #check:checked ~ .checkbtn
+    {
+        color: rgb(175, 199, 70);
     }
 }
 @media (max-width: 1438px) {
