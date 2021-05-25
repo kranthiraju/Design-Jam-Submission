@@ -258,7 +258,6 @@ nav{
     background: url('aple-park.jpg');
     background-size: cover;
     color: white;
-    height: 90%;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -290,7 +289,7 @@ nav{
 }
 .invent
 {
-    height: 600px;
+    height: auto;
     width: 100%;
     background: linear-gradient(145deg, #5c75a8, #37ff69);
     border-radius: 20px;
@@ -453,7 +452,7 @@ nav{
     }
     nav .menu ul
     {
-        display: block;
+        display: none;
         line-height: 30px;
         text-align: center;
         height: 100vh;
@@ -470,6 +469,14 @@ nav{
     }
     #check:checked ~ .menu ul
     {
-        display: none;
+        display: block;
+    }
+}
+@media (max-width: 1438px) {
+    .invent ul li
+    {
+        display: block;
+        margin-bottom: 30px;
+        margin-left: 30%;
     }
 }
